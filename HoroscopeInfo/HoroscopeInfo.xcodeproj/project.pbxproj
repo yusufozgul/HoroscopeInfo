@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		977F32C125223A0A0027125E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32C025223A0A0027125E /* AppDelegate.swift */; };
 		977F32C325223A0A0027125E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32C225223A0A0027125E /* SceneDelegate.swift */; };
-		977F32C525223A0A0027125E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32C425223A0A0027125E /* ViewController.swift */; };
 		977F32C825223A0A0027125E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977F32C625223A0A0027125E /* Main.storyboard */; };
 		977F32CA25223A0C0027125E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977F32C925223A0C0027125E /* Assets.xcassets */; };
 		977F32CD25223A0C0027125E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977F32CB25223A0C0027125E /* LaunchScreen.storyboard */; };
 		977F32D825223A0D0027125E /* HoroscopeInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32D725223A0D0027125E /* HoroscopeInfoTests.swift */; };
-		977F32E325223A0D0027125E /* HoroscopeInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32E225223A0D0027125E /* HoroscopeInfoUITests.swift */; };
+		977F32FA25223BD80027125E /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32F725223BD80027125E /* DataParser.swift */; };
+		977F32FB25223BD80027125E /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32F825223BD80027125E /* ApiClient.swift */; };
+		977F32FC25223BD80027125E /* ApiExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F32F925223BD80027125E /* ApiExtension.swift */; };
+		977F330125223ECE0027125E /* HoroscopeDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F330025223ECE0027125E /* HoroscopeDetailRequest.swift */; };
+		977F330825223FAF0027125E /* HoroscopeDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F330725223FAF0027125E /* HoroscopeDetailContracts.swift */; };
+		977F3310252241B60027125E /* HoroscopeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F330F252241B60027125E /* HoroscopeDetailViewModel.swift */; };
+		977F3315252242FE0027125E /* HoroscopeDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977F3314252242FE0027125E /* HoroscopeDetailView.storyboard */; };
+		977F331A2522430D0027125E /* HoroscopeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F33192522430D0027125E /* HoroscopeDetailVC.swift */; };
+		977F3323252245820027125E /* LocalizeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F3322252245820027125E /* LocalizeConverter.swift */; };
+		977F3337252245BF0027125E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977F3339252245BF0027125E /* Localizable.strings */; };
+		977F3342252246010027125E /* HoroscopeDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F3341252246010027125E /* HoroscopeDetailBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		977F32D425223A0D0027125E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 977F32B525223A0A0027125E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 977F32BC25223A0A0027125E;
-			remoteInfo = HoroscopeInfo;
-		};
-		977F32DF25223A0D0027125E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 977F32B525223A0A0027125E /* Project object */;
 			proxyType = 1;
@@ -38,7 +40,6 @@
 		977F32BD25223A0A0027125E /* HoroscopeInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		977F32C025223A0A0027125E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		977F32C225223A0A0027125E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		977F32C425223A0A0027125E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		977F32C725223A0A0027125E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		977F32C925223A0C0027125E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977F32CC25223A0C0027125E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,9 +47,22 @@
 		977F32D325223A0D0027125E /* HoroscopeInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoroscopeInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		977F32D725223A0D0027125E /* HoroscopeInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeInfoTests.swift; sourceTree = "<group>"; };
 		977F32D925223A0D0027125E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		977F32DE25223A0D0027125E /* HoroscopeInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoroscopeInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		977F32E225223A0D0027125E /* HoroscopeInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeInfoUITests.swift; sourceTree = "<group>"; };
 		977F32E425223A0D0027125E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977F32F725223BD80027125E /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		977F32F825223BD80027125E /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		977F32F925223BD80027125E /* ApiExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiExtension.swift; sourceTree = "<group>"; };
+		977F330025223ECE0027125E /* HoroscopeDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailRequest.swift; sourceTree = "<group>"; };
+		977F330725223FAF0027125E /* HoroscopeDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailContracts.swift; sourceTree = "<group>"; };
+		977F330F252241B60027125E /* HoroscopeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailViewModel.swift; sourceTree = "<group>"; };
+		977F3314252242FE0027125E /* HoroscopeDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HoroscopeDetailView.storyboard; sourceTree = "<group>"; };
+		977F33192522430D0027125E /* HoroscopeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailVC.swift; sourceTree = "<group>"; };
+		977F3322252245820027125E /* LocalizeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeConverter.swift; sourceTree = "<group>"; };
+		977F332D252245A20027125E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		977F332E252245A20027125E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		977F3338252245BF0027125E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		977F333D252245C30027125E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		977F3341252246010027125E /* HoroscopeDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +80,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977F32DB25223A0D0027125E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		977F32B425223A0A0027125E = {
 			isa = PBXGroup;
 			children = (
+				977F32F325223B970027125E /* API */,
 				977F32BF25223A0A0027125E /* HoroscopeInfo */,
+				977F3321252245700027125E /* Utility */,
 				977F32D625223A0D0027125E /* HoroscopeInfoTests */,
 				977F32E125223A0D0027125E /* HoroscopeInfoUITests */,
 				977F32BE25223A0A0027125E /* Products */,
@@ -91,7 +100,6 @@
 			children = (
 				977F32BD25223A0A0027125E /* HoroscopeInfo.app */,
 				977F32D325223A0D0027125E /* HoroscopeInfoTests.xctest */,
-				977F32DE25223A0D0027125E /* HoroscopeInfoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +107,14 @@
 		977F32BF25223A0A0027125E /* HoroscopeInfo */ = {
 			isa = PBXGroup;
 			children = (
+				977F330525223F890027125E /* Module */,
 				977F32C025223A0A0027125E /* AppDelegate.swift */,
 				977F32C225223A0A0027125E /* SceneDelegate.swift */,
-				977F32C425223A0A0027125E /* ViewController.swift */,
 				977F32C625223A0A0027125E /* Main.storyboard */,
 				977F32C925223A0C0027125E /* Assets.xcassets */,
 				977F32CB25223A0C0027125E /* LaunchScreen.storyboard */,
 				977F32CE25223A0C0027125E /* Info.plist */,
+				977F3339252245BF0027125E /* Localizable.strings */,
 			);
 			path = HoroscopeInfo;
 			sourceTree = "<group>";
@@ -126,6 +135,45 @@
 				977F32E425223A0D0027125E /* Info.plist */,
 			);
 			path = HoroscopeInfoUITests;
+			sourceTree = "<group>";
+		};
+		977F32F325223B970027125E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				977F32F825223BD80027125E /* ApiClient.swift */,
+				977F32F925223BD80027125E /* ApiExtension.swift */,
+				977F32F725223BD80027125E /* DataParser.swift */,
+				977F330025223ECE0027125E /* HoroscopeDetailRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		977F330525223F890027125E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				977F330625223F900027125E /* HoroscopeDetailPage */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		977F330625223F900027125E /* HoroscopeDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				977F330725223FAF0027125E /* HoroscopeDetailContracts.swift */,
+				977F330F252241B60027125E /* HoroscopeDetailViewModel.swift */,
+				977F3314252242FE0027125E /* HoroscopeDetailView.storyboard */,
+				977F33192522430D0027125E /* HoroscopeDetailVC.swift */,
+				977F3341252246010027125E /* HoroscopeDetailBuilder.swift */,
+			);
+			path = HoroscopeDetailPage;
+			sourceTree = "<group>";
+		};
+		977F3321252245700027125E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				977F3322252245820027125E /* LocalizeConverter.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +214,6 @@
 			productReference = 977F32D325223A0D0027125E /* HoroscopeInfoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		977F32DD25223A0D0027125E /* HoroscopeInfoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 977F32ED25223A0D0027125E /* Build configuration list for PBXNativeTarget "HoroscopeInfoUITests" */;
-			buildPhases = (
-				977F32DA25223A0D0027125E /* Sources */,
-				977F32DB25223A0D0027125E /* Frameworks */,
-				977F32DC25223A0D0027125E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				977F32E025223A0D0027125E /* PBXTargetDependency */,
-			);
-			name = HoroscopeInfoUITests;
-			productName = HoroscopeInfoUITests;
-			productReference = 977F32DE25223A0D0027125E /* HoroscopeInfoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +230,6 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 977F32BC25223A0A0027125E;
 					};
-					977F32DD25223A0D0027125E = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 977F32BC25223A0A0027125E;
-					};
 				};
 			};
 			buildConfigurationList = 977F32B825223A0A0027125E /* Build configuration list for PBXProject "HoroscopeInfo" */;
@@ -213,6 +239,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 977F32B425223A0A0027125E;
 			productRefGroup = 977F32BE25223A0A0027125E /* Products */;
@@ -221,7 +248,6 @@
 			targets = (
 				977F32BC25223A0A0027125E /* HoroscopeInfo */,
 				977F32D225223A0D0027125E /* HoroscopeInfoTests */,
-				977F32DD25223A0D0027125E /* HoroscopeInfoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,20 +257,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977F3337252245BF0027125E /* Localizable.strings in Resources */,
 				977F32CD25223A0C0027125E /* LaunchScreen.storyboard in Resources */,
+				977F3315252242FE0027125E /* HoroscopeDetailView.storyboard in Resources */,
 				977F32CA25223A0C0027125E /* Assets.xcassets in Resources */,
 				977F32C825223A0A0027125E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		977F32D125223A0D0027125E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		977F32DC25223A0D0027125E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +279,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977F32C525223A0A0027125E /* ViewController.swift in Sources */,
 				977F32C125223A0A0027125E /* AppDelegate.swift in Sources */,
+				977F3323252245820027125E /* LocalizeConverter.swift in Sources */,
+				977F331A2522430D0027125E /* HoroscopeDetailVC.swift in Sources */,
+				977F330125223ECE0027125E /* HoroscopeDetailRequest.swift in Sources */,
+				977F3310252241B60027125E /* HoroscopeDetailViewModel.swift in Sources */,
+				977F32FC25223BD80027125E /* ApiExtension.swift in Sources */,
+				977F3342252246010027125E /* HoroscopeDetailBuilder.swift in Sources */,
+				977F32FA25223BD80027125E /* DataParser.swift in Sources */,
 				977F32C325223A0A0027125E /* SceneDelegate.swift in Sources */,
+				977F32FB25223BD80027125E /* ApiClient.swift in Sources */,
+				977F330825223FAF0027125E /* HoroscopeDetailContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977F32DA25223A0D0027125E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				977F32E325223A0D0027125E /* HoroscopeInfoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +309,6 @@
 			target = 977F32BC25223A0A0027125E /* HoroscopeInfo */;
 			targetProxy = 977F32D425223A0D0027125E /* PBXContainerItemProxy */;
 		};
-		977F32E025223A0D0027125E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 977F32BC25223A0A0027125E /* HoroscopeInfo */;
-			targetProxy = 977F32DF25223A0D0027125E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -300,6 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				977F32C725223A0A0027125E /* Base */,
+				977F332D252245A20027125E /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,8 +325,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				977F32CC25223A0C0027125E /* Base */,
+				977F332E252245A20027125E /* tr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		977F3339252245BF0027125E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				977F3338252245BF0027125E /* en */,
+				977F333D252245C30027125E /* tr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -509,44 +538,6 @@
 			};
 			name = Release;
 		};
-		977F32EE25223A0D0027125E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoroscopeInfoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yusufozgul.HoroscopeInfoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoroscopeInfo;
-			};
-			name = Debug;
-		};
-		977F32EF25223A0D0027125E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HoroscopeInfoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yusufozgul.HoroscopeInfoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HoroscopeInfo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,15 +564,6 @@
 			buildConfigurations = (
 				977F32EB25223A0D0027125E /* Debug */,
 				977F32EC25223A0D0027125E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		977F32ED25223A0D0027125E /* Build configuration list for PBXNativeTarget "HoroscopeInfoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				977F32EE25223A0D0027125E /* Debug */,
-				977F32EF25223A0D0027125E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

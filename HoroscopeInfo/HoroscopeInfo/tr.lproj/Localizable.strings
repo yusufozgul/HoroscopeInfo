@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  HoroscopeInfo
+
+  Created by Yusuf Özgül on 28.09.2020.
+  
+*/
+
+// MARK: - Alert
+"ALERT_TITLE" = "Uyarı";
+"ALERT_CANCEL_BUTTON_TITLE" = "Kapat";
