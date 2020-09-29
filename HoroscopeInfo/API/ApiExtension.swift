@@ -39,3 +39,9 @@ enum HttpMethod: String {
 extension Encodable {
     func toJSONData() -> Data? { try? JSONEncoder().encode(self) }
 }
+
+/// Generic  Api error response type
+struct ApiResponseError: Decodable {
+    let status: Bool
+    let msg: String
+}

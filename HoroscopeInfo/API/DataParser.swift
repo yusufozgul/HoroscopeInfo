@@ -13,6 +13,10 @@ class ParseFromData<T: Decodable>{
     /// - Returns: If `Data` is Error Type return `ApiError` otherwise return `T` type
     class func parse(data: Data) -> Result<T, ApiError> {
         let jsonDecoder = JSONDecoder()
+        
+        if let error = try? jsonDecoder.decode(ApiResponseError.self, from: data) {
+            return .failure(.network(errorMessage: error.msg))
+        }
         do {
             let result = try jsonDecoder.decode(T.self, from: data)
             return .success(result)
