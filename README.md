@@ -30,4 +30,3 @@ https://json.astrologyapi.com/v1/astro_details
 ![](https://github.com/yusufozgul/HoroscopeInfo/blob/main/Github/SS2.jpg)
 ![](https://github.com/yusufozgul/HoroscopeInfo/blob/main/Github/SS3.jpg)
 ![](https://github.com/yusufozgul/HoroscopeInfo/blob/main/Github/SS4.jpg)
-![](https://github.com/yusufozgul/HoroscopeInfo/blob/main/Github/SS5.jpg)
