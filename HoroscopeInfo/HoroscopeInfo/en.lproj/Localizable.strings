@@ -9,3 +9,12 @@
 // MARK: - Alert
 "ALERT_TITLE" = "Alert";
 "ALERT_CANCEL_BUTTON_TITLE" = "Cancel";
+
+// Horoscope Info VC
+"BIRTH_DATE_LABEL" = "Birth Date";
+"LATITUDE" = "Latitude";
+"LONGITUDE" = "Longitude";
+
+// Horoscope Info View Model Error Description
+"COORDINATES_ERROR" = "Coordinates could not be resolved. Enter it as: 35,145";
+"DATE_ERROR" = "The date could not be resolved, please re-select a date.";

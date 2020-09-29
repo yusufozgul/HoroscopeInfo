@@ -24,6 +24,10 @@
 		977F3323252245820027125E /* LocalizeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F3322252245820027125E /* LocalizeConverter.swift */; };
 		977F3337252245BF0027125E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977F3339252245BF0027125E /* Localizable.strings */; };
 		977F3342252246010027125E /* HoroscopeDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F3341252246010027125E /* HoroscopeDetailBuilder.swift */; };
+		977F334B252318F50027125E /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F334A252318F50027125E /* APITest.swift */; };
+		977F3351252319310027125E /* HoroscopeDetailData.json in Resources */ = {isa = PBXBuildFile; fileRef = 977F3350252319310027125E /* HoroscopeDetailData.json */; };
+		977F33552523193F0027125E /* ErroredResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 977F33542523193F0027125E /* ErroredResponse.json */; };
+		977F335C25231CF50027125E /* TimezoneConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F335825231B1C0027125E /* TimezoneConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		977F3338252245BF0027125E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		977F333D252245C30027125E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		977F3341252246010027125E /* HoroscopeDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDetailBuilder.swift; sourceTree = "<group>"; };
+		977F334A252318F50027125E /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		977F3350252319310027125E /* HoroscopeDetailData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HoroscopeDetailData.json; sourceTree = "<group>"; };
+		977F33542523193F0027125E /* ErroredResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErroredResponse.json; sourceTree = "<group>"; };
+		977F335825231B1C0027125E /* TimezoneConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		977F32D625223A0D0027125E /* HoroscopeInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				977F3349252318E30027125E /* APITest */,
 				977F32D725223A0D0027125E /* HoroscopeInfoTests.swift */,
 				977F32D925223A0D0027125E /* Info.plist */,
 			);
@@ -172,8 +181,19 @@
 			isa = PBXGroup;
 			children = (
 				977F3322252245820027125E /* LocalizeConverter.swift */,
+				977F335825231B1C0027125E /* TimezoneConverter.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		977F3349252318E30027125E /* APITest */ = {
+			isa = PBXGroup;
+			children = (
+				977F334A252318F50027125E /* APITest.swift */,
+				977F3350252319310027125E /* HoroscopeDetailData.json */,
+				977F33542523193F0027125E /* ErroredResponse.json */,
+			);
+			path = APITest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977F33552523193F0027125E /* ErroredResponse.json in Resources */,
+				977F3351252319310027125E /* HoroscopeDetailData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				977F32C125223A0A0027125E /* AppDelegate.swift in Sources */,
+				977F335C25231CF50027125E /* TimezoneConverter.swift in Sources */,
 				977F3323252245820027125E /* LocalizeConverter.swift in Sources */,
 				977F331A2522430D0027125E /* HoroscopeDetailVC.swift in Sources */,
 				977F330125223ECE0027125E /* HoroscopeDetailRequest.swift in Sources */,
@@ -297,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977F334B252318F50027125E /* APITest.swift in Sources */,
 				977F32D825223A0D0027125E /* HoroscopeInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

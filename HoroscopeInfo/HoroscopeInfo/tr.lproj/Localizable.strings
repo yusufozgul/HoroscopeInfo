@@ -9,3 +9,12 @@
 // MARK: - Alert
 "ALERT_TITLE" = "Uyarı";
 "ALERT_CANCEL_BUTTON_TITLE" = "Kapat";
+
+// Horoscope Info VC
+"BIRTH_DATE_LABEL" = "Doğum TArihi";
+"LATITUDE" = "Enlem";
+"LONGITUDE" = "Boylam";
+
+// Horoscope Info View Model Error Description
+"COORDINATES_ERROR" = "Koordinatlar ayrıştıtılamadı. Giriş formarınız şu şekilde olmalı: 35,145";
+"DATE_ERROR" = "Tarih okunurken bir sorun oluştu. Lütfen yeniden tarih seçiniz.";

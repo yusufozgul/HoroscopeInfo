@@ -19,30 +19,28 @@ class HoroscopeDetailViewModel {
 extension HoroscopeDetailViewModel: HoroscopeDetailViewModelProtocol {
     
     func load(birthDate: Date, lat: String, lon: String) {
+        guard let lat = Double(lat), let lon = Double(lon) else {
+            notify(.showError("COORDINATES_ERROR".localized))
+            return
+        }
         
         let calendar = Calendar.current
         let component = calendar.dateComponents([.year, .month, .day, .hour, .minute, .timeZone], from: birthDate)
-        
-        
         guard let day = component.day, let month = component.month, let year = component.year, let hour = component.hour, let min = component.minute else {
-            notify(.showError("DATE"))
+            notify(.showError("DATE_ERROR".localized))
             return
         }
         
-        guard let lat = Double(lat), let lon = Double(lon) else {
-            notify(.showError("Coordinates"))
-            return
+        TimezoneConverter.getTimezone(from: lat, longitude: lon) { (result) in
+            switch result {
+            case .success(let timeZone):
+                print(timeZone)
+                let data = HoroscopeDetailRequestData(day: day, month: month, year: year, hour: hour, min: min, lat: lat, lon: lon, tzone: 5.5)
+                self.sendRequest(data: data)
+            case .failure(let error):
+                self.notify(.showError(error.localizedDescription))
+            }
         }
-        
-        let data = HoroscopeDetailRequestData(day: day,
-                                              month: month,
-                                              year: year,
-                                              hour: hour,
-                                              min: min,
-                                              lat: lat,
-                                              lon: lon,
-                                              tzone: 5.5)
-        sendRequest(data: data)
     }
     func sendRequest(data: HoroscopeDetailRequestData) {
         notify(.setLoading(true))

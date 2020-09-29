@@ -37,6 +37,11 @@ class HoroscopeDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        birthDateLabel.text = "BIRTH_DATE_LABEL".localized
+        latitudeLabel.text = "LATITUDE".localized
+        longitudeLabel.text = "LONGITUDE".localized
+        latitudeTextfield.keyboardType = .decimalPad
+        longitudeTextField.keyboardType = .decimalPad
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,6 +58,7 @@ class HoroscopeDetailVC: UIViewController {
     }
     
     @IBAction func loadData(_ sender: Any) {
+        self.view.endEditing(true)
         viewModel.load(birthDate: dateSelector.date, lat: latitudeTextfield.text!, lon: longitudeTextField.text!)
     }
 }
