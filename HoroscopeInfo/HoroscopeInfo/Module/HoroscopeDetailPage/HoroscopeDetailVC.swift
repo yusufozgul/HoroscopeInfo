@@ -20,6 +20,7 @@ class HoroscopeDetailVC: UIViewController {
     @IBOutlet weak var latitudeTextfield: UITextField!
     @IBOutlet weak var longitudeTextField: UITextField!
     @IBOutlet weak var collectionArea: UIView!
+    @IBOutlet weak var getDataButton: UIButton!
     
     @IBOutlet weak var birthDateLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
@@ -42,6 +43,8 @@ class HoroscopeDetailVC: UIViewController {
         longitudeLabel.text = "LONGITUDE".localized
         latitudeTextfield.keyboardType = .decimalPad
         longitudeTextField.keyboardType = .decimalPad
+        title = "VC_TITLE".localized
+        getDataButton.setTitle("GET_DATA_BUTTON_TITLE".localized, for: .normal)
     }
     
     override func viewDidAppear(_ animated: Bool) {

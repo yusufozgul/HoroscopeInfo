@@ -75,8 +75,8 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKF-FD-lDS">
-                                                <rect key="frame" x="129" y="150.5" width="122" height="22"/>
-                                                <state key="normal" title="Bilgileri Getir" image="network" catalog="system">
+                                                <rect key="frame" x="144" y="150.5" width="92" height="22"/>
+                                                <state key="normal" title="BUTTON" image="network" catalog="system">
                                                     <color key="titleColor" name="AccentColor"/>
                                                 </state>
                                                 <connections>
@@ -120,6 +120,7 @@
                         <outlet property="birthDateLabel" destination="af0-9L-UZR" id="61s-Zb-mV2"/>
                         <outlet property="collectionArea" destination="VeU-xt-HVk" id="CyL-xs-Spe"/>
                         <outlet property="dateSelector" destination="One-mI-0zJ" id="a2W-Yb-zSu"/>
+                        <outlet property="getDataButton" destination="mKF-FD-lDS" id="Ul3-om-Hlf"/>
                         <outlet property="latitudeLabel" destination="9eb-JZ-dL1" id="jLb-Up-v8a"/>
                         <outlet property="latitudeTextfield" destination="K9I-q3-6MO" id="kOG-lj-buQ"/>
                         <outlet property="longitudeLabel" destination="oIx-tL-AwP" id="Gkn-Wr-uEH"/>

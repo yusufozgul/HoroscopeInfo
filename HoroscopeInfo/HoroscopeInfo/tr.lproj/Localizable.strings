@@ -14,6 +14,8 @@
 "BIRTH_DATE_LABEL" = "Doğum TArihi";
 "LATITUDE" = "Enlem";
 "LONGITUDE" = "Boylam";
+"VC_TITLE" = "Burç Detayları";
+"GET_DATA_BUTTON_TITLE" = "Bilgileri Getir";
 
 // Horoscope Info View Model Error Description
 "COORDINATES_ERROR" = "Koordinatlar ayrıştıtılamadı. Giriş formarınız şu şekilde olmalı: 35,145";
